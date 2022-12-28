@@ -1,0 +1,10 @@
+<div class="row">
+<div *ngIf="visible">
+<p>{{fecha | date : 'long'}}</p>
+</div>
+<div>
+<button (click)="visible=!visible">ver/ocultar</button>
+</div>
+<br>
+<p>{{fechaObservable| async}}</p>
+</div>
